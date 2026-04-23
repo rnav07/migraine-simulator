@@ -97,7 +97,7 @@ function App() {
     <>
       {/* Background Speech Audio */}
       <audio id="bg-speech" loop>
-        <source src="/voice.m4a" type="audio/mp4" />
+        <source src={`${import.meta.env.BASE_URL}voice.m4a`} type="audio/mp4" />
       </audio>
 
       {/* Symptom Overlays (Outside transformed container to maintain true fixed position) */}
